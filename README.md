@@ -178,3 +178,9 @@ During deployment:
 This repository only automates installation of FFmpeg.
 
 FFmpeg and all bundled codec libraries remain subject to their respective licenses.
+
+## Current FFmpeg version:
+N-125157-gefa8b20987-20260622
+
+## Source:
+BtbN FFmpeg Builds
