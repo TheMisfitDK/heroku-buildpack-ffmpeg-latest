@@ -25,7 +25,7 @@ This buildpack downloads a prebuilt FFmpeg package and exposes both `ffmpeg` and
 Add the buildpack at index 1:
 
 ```bash
-heroku buildpacks:add --index 1 https://github.com/TheMisfitDK/heroku-buildpack-ffmpeg
+heroku buildpacks:add --index 1 https://github.com/TheMisfitDK/heroku-buildpack-ffmpeg-latest
 ```
 
 Verify:
@@ -39,7 +39,7 @@ Expected output:
 ```text
 === Buildpack URLs
 
-1. https://github.com/TheMisfitDK/heroku-buildpack-ffmpeg
+1. https://github.com/TheMisfitDK/heroku-buildpack-ffmpeg-latest
 2. heroku/nodejs
 ```
 
