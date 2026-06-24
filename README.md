@@ -153,10 +153,11 @@ output.mkv
 During deployment:
 
 1. Heroku detects the buildpack.
-2. FFmpeg binaries are downloaded.
-3. Files are extracted into `/app/vendor/ffmpeg`.
-4. PATH is updated automatically.
-5. Application deployment continues normally.
+2. FFmpeg tarball is downloaded from [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds) (GPL, latest master).
+3. Tarball is **cached** in Heroku's build cache — subsequent deploys skip the download.
+4. Files are extracted into `/app/vendor/ffmpeg`.
+5. PATH is updated via `.profile.d/ffmpeg.sh` for runtime and exported for subsequent buildpacks at buildtime.
+6. Application deployment continues normally.
 
 ## Supported Applications
 
